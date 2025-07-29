@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,8 @@
             height: 200px;
             width: 100%;
             object-fit: contain;
-            filter: blur(8px);
+            filter: blur(4px);
+            border-radius: 10px;
             transition: filter 0.3s ease-in-out;
             background-color: #f0f0f0;
         }
@@ -33,121 +34,128 @@
     </style>
 </head>
 <body>
-    <h1 class="card text-center" >Galeria de Propiel </h1>
+    <div class="text-center mb-4">
+        <p>Fotos desbloqueadas: <span id="contador">0</span></p>
+    </div>
     <div class="container mt-5">
         <div class="row">
-            <div class="col-md-4 mb-4">
+            <!-- Imagen 1-->
+            <div class="col-md-6 mb-4">
                 <div class="card text-center">
-                    <img src="photos/derma.jpg" class="card-img-top blur-img" alt="Foto 1">
+                    <img src="photos/1.jpeg" class="card-img-top blur-img" alt="Foto 1">
                     <div class="card-footer">
-                        <button class="btn btn-primary" onclick="toggleBlur(this)">Ver Foto</button>
+                        <button class="btn btn-primary" onclick="toggleBlur(this)">Ver foto</button>
                     </div>
                 </div>
             </div>
-
+            <!-- Imagen 2-->
             <div class="col-md-4 mb-4">
                 <div class="card text-center">
-                    <img src="photos/dermatologia.jpg" class="card-img-top blur-img" alt="Foto 2">
+                    <img src="photos/2.jpg" class="card-img-top blur-img" alt="Foto 2">
                     <div class="card-footer">
-                        <button class="btn btn-primary" onclick="toggleBlur(this)">Ver Foto</button>
+                        <button class="btn btn-primary" onclick="toggleBlur(this)">Ver foto</button>
                     </div>
                 </div>
             </div>
-
+            <!-- Imagen 3-->
             <div class="col-md-4 mb-4">
                 <div class="card text-center">
-                    <img src="photos/doctor.jpeg" class="card-img-top blur-img" alt="Foto 3">
+                    <img src="photos/3.jpg" class="card-img-top blur-img" alt="Foto 3">
                     <div class="card-footer">
-                        <button class="btn btn-primary" onclick="toggleBlur(this)">Ver Foto</button>
+                        <button class="btn btn-primary" onclick="toggleBlur(this)">Ver foto</button>
                     </div>
                 </div>
             </div>
-
+            <!-- Imagen 4-->
             <div class="col-md-4 mb-4">
                 <div class="card text-center">
-                    <img src="photos/hero.jpg" class="card-img-top blur-img" alt="Foto 4">
+                    <img src="photos/4.jpg" class="card-img-top blur-img" alt="Foto 4">
                     <div class="card-footer">
-                        <button class="btn btn-primary" onclick="toggleBlur(this)">Ver Foto</button>
+                        <button class="btn btn-primary" onclick="toggleBlur(this)">Ver foto</button>
                     </div>
                 </div>
             </div>
-
+            <!-- Imagen 5-->
             <div class="col-md-4 mb-4">
                 <div class="card text-center">
-                    <img src="photos/logo.png" class="card-img-top blur-img" alt="Foto 1">
+                    <img src="photos/5.jpg" class="card-img-top blur-img" alt="Foto 5">
                     <div class="card-footer">
-                        <button class="btn btn-primary" onclick="toggleBlur(this)">Ver Foto</button>
+                        <button class="btn btn-primary" onclick="toggleBlur(this)">Ver foto</button>
                     </div>
                 </div>
             </div>
-
+            <!-- Imagen 6-->
             <div class="col-md-4 mb-4">
                 <div class="card text-center">
-                    <img src="photos/podo.jpeg" class="card-img-top blur-img" alt="Foto 2">
+                    <img src="photos/6.webp" class="card-img-top blur-img" alt="Foto 6">
                     <div class="card-footer">
-                        <button class="btn btn-primary" onclick="toggleBlur(this)">Ver Foto</button>
+                        <button class="btn btn-primary" onclick="toggleBlur(this)">Ver foto</button>
                     </div>
                 </div>
             </div>
-
+            <!-- Imagen 7-->
             <div class="col-md-4 mb-4">
                 <div class="card text-center">
-                    <img src="photos/podo.jpg" class="card-img-top blur-img" alt="Foto 3">
+                    <img src="photos/7.webp" class="card-img-top blur-img" alt="Foto 7">
                     <div class="card-footer">
-                        <button class="btn btn-primary" onclick="toggleBlur(this)">Ver Foto</button>
+                        <button class="btn btn-primary" onclick="toggleBlur(this)">Ver foto</button>
                     </div>
                 </div>
             </div>
-
+            <!-- Imagen 8-->
             <div class="col-md-4 mb-4">
                 <div class="card text-center">
-                    <img src="photos/podologia.jpg" class="card-img-top blur-img" alt="Foto 4">
+                    <img src="photos/8.jpg" class="card-img-top blur-img" alt="Foto 8">
                     <div class="card-footer">
-                        <button class="btn btn-primary" onclick="toggleBlur(this)">Ver Foto</button>
+                        <button class="btn btn-primary" onclick="toggleBlur(this)">Ver foto</button>
                     </div>
                 </div>
             </div>
-
+            <!-- Imagen 9-->
             <div class="col-md-4 mb-4">
                 <div class="card text-center">
-                    <img src="photos/tamiz.jpg" class="card-img-top blur-img" alt="Foto 1">
+                    <img src="photos/9.jpg" class="card-img-top blur-img" alt="Foto 9">
                     <div class="card-footer">
-                        <button class="btn btn-primary" onclick="toggleBlur(this)">Ver Foto</button>
+                        <button class="btn btn-primary" onclick="toggleBlur(this)">Ver foto</button>
                     </div>
                 </div>
             </div>
-
+            <!-- Imagen 10-->
             <div class="col-md-4 mb-4">
                 <div class="card text-center">
-                    <img src="photos/tamizaje.jpeg" class="card-img-top blur-img" alt="Foto 2">
+                    <img src="photos/10.webp" class="card-img-top blur-img" alt="Foto 10">
                     <div class="card-footer">
-                        <button class="btn btn-primary" onclick="toggleBlur(this)">Ver Foto</button>
+                        <button class="btn btn-primary" onclick="toggleBlur(this)">Ver foto</button>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-                        
+    <script>
+        let contador = 0;
+        function toggleBlur(button){
+            const img = button.closest('.card').querySelector('img');
+            const isBlurred = img.classList.contains('blur-img');
 
-        </div><!--cierre de row-->
-    </div><!--cierre de container-->
+            if (isBlurred) {
+                img.classList.remove('blur-img');
+                img.classList.add('clear-img');
+                button.textContent = 'Ocultar Foto';
+                button.classList.remove('btn-primary');
+                button.classList.add('btn-success');
+                contador++;
+            } else {
+                img.classList.remove('clear-img');
+                img.classList.add('blur-img');
+                button.textContent = 'Ver Foto';
+                button.classList.remove('btn-success');
+                button.classList.add('btn-primary');
+                contador--;
+            }
 
-
-<script>
-    function toggleBlur(button){
-        const img = button.closest('.card').querySelector('img');
-        const isBlurred = img.classList.contains('blur-img');
-
-        if (isBlurred) {
-            img.classList.remove('blur-img');
-            img.classList.add('clear-img');
-            button.textContent = 'Ocultar Foto';
-        } else {
-            img.classList.remove('clear-img');
-            img.classList.add('blur-img');
-            button.textContent = 'Ver Foto';
+            document.getElementById('contador').textContent = contador;
         }
-    }
-</script>
-
+    </script>
 </body>
 </html>
